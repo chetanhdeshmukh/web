@@ -1,0 +1,8 @@
+# Heartbeat App - Authorized Sellers
+# Last updated: December 2025
+
+# Primary Ad Network
+ironsrc.com, 641263, DIRECT
+
+# Mediation Partner
+inmobi.com, 0be37588bbb04f519c42e743091c933f, DIRECT
