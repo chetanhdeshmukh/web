@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap");
+
+:root {
+    --policy-bg: #070b0f;
+    --policy-panel: #0d141b;
+    --policy-text: #dce5ea;
+    --policy-muted: #8d9aa5;
+    --policy-acid: #c7ff4d;
+    --policy-cyan: #55e6ff;
+    --policy-line: rgba(255,255,255,.1);
+}
+html { background: var(--policy-bg); }
+body {
+    position: relative;
+    max-width: 980px !important;
+    margin: 0 auto !important;
+    padding: 90px 48px !important;
+    color: var(--policy-text) !important;
+    background:
+        radial-gradient(circle at 90% 5%, rgba(85,230,255,.08), transparent 22rem),
+        linear-gradient(rgba(255,255,255,.022) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.022) 1px, transparent 1px),
+        var(--policy-bg) !important;
+    background-size: auto, 48px 48px, 48px 48px, auto !important;
+    font-family: "Manrope", Arial, sans-serif !important;
+    font-size: 15px;
+    line-height: 1.8 !important;
+}
+body::before {
+    content: "CD / LEGAL";
+    display: block;
+    margin-bottom: 48px;
+    color: var(--policy-acid);
+    font: 500 10px "DM Mono", monospace;
+    letter-spacing: .15em;
+}
+.container {
+    padding: 0 !important;
+    color: inherit !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+h1 {
+    margin: 0 0 18px !important;
+    padding: 0 0 28px !important;
+    color: #f2f7f9 !important;
+    border-bottom: 1px solid var(--policy-line) !important;
+    font-size: clamp(38px, 6vw, 68px) !important;
+    line-height: 1.03 !important;
+    letter-spacing: -.055em;
+}
+h2 {
+    margin: 54px 0 16px !important;
+    color: var(--policy-acid) !important;
+    font: 500 15px "DM Mono", monospace !important;
+    letter-spacing: -.02em;
+}
+p, li { color: #abb7be; }
+strong { color: #f0f5f7; }
+a { color: var(--policy-cyan) !important; text-decoration: none !important; border-bottom: 1px solid rgba(85,230,255,.35); }
+a:hover { border-color: var(--policy-cyan); }
+code { padding: 2px 6px; color: var(--policy-acid); background: rgba(199,255,77,.08); font-family: "DM Mono", monospace; }
+ul { padding-left: 22px !important; }
+li { margin-bottom: 11px !important; padding-left: 7px; }
+li::marker { color: var(--policy-acid); }
+.last-updated {
+    margin-bottom: 45px !important;
+    color: var(--policy-muted) !important;
+    font: normal 10px "DM Mono", monospace !important;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+.contact, .sensitive-box {
+    margin-top: 48px !important;
+    padding: 28px !important;
+    border: 1px solid rgba(199,255,77,.25) !important;
+    border-left: 3px solid var(--policy-acid) !important;
+    color: inherit !important;
+    background: linear-gradient(135deg, rgba(199,255,77,.06), transparent) !important;
+}
+.contact h2 { margin-top: 0 !important; }
+.sensitive-box { border-color: rgba(85,230,255,.25) !important; border-left-color: var(--policy-cyan) !important; }
+.marathi { margin-top: 90px !important; padding-top: 70px !important; border-top: 1px solid var(--policy-line) !important; }
+footer { margin-top: 70px !important; padding-top: 25px; border-top: 1px solid var(--policy-line); color: var(--policy-muted) !important; font: 400 9px "DM Mono", monospace !important; text-transform: uppercase; }
+@media (max-width: 650px) {
+    body { padding: 55px 22px !important; font-size: 14px; }
+    body::before { margin-bottom: 35px; }
+    h1 { font-size: 40px !important; }
+    h2 { margin-top: 42px !important; }
+    .contact, .sensitive-box { padding: 22px !important; }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CAN Dashboard System by Chetan Deshmukh: a multi-node automotive data display built with Embedded C and CAN.">
+    <meta name="theme-color" content="#070b0f">
+    <title>CAN Dashboard System | Chetan Deshmukh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="../assets/project.css">
+    <script src="../assets/script.js" defer></script>
+</head>
+<body class="project-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="site-header" data-header>
+        <a class="brand" href="../index.html" aria-label="Chetan Deshmukh, home"><span class="brand-mark">CD</span><span class="brand-name">Chetan Deshmukh</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+        <nav class="site-nav" id="site-nav" aria-label="Project navigation">
+            <a href="../index.html#projects">All projects</a>
+            <a class="nav-cta" href="https://github.com/chetanhdeshmukh/dashboard-can-project" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="project-hero">
+            <div class="section-shell">
+                <div class="project-breadcrumb reveal"><a href="../index.html">Home</a><span>/</span><a href="../index.html#projects">Projects</a><span>/</span><span>CAN Dashboard</span></div>
+                <div class="project-hero-grid">
+                    <div class="reveal">
+                        <div class="project-kicker">01 / EMBEDDED SYSTEM</div>
+                        <h1>CAN<br>Dashboard</h1>
+                        <p class="project-summary">A multi-node vehicle dashboard that receives fuel and temperature data over CAN, processes messages, and turns raw bus traffic into clear real-time information.</p>
+                    </div>
+                    <div class="project-actions reveal">
+                        <a class="button button-primary" href="https://github.com/chetanhdeshmukh/dashboard-can-project" target="_blank" rel="noreferrer">Explore source code <span aria-hidden="true">↗</span></a>
+                        <div class="project-facts">
+                            <div><span>Role</span><strong>Dashboard node development</strong></div>
+                            <div><span>Stack</span><strong>Embedded C / CAN / Bare Metal</strong></div>
+                            <div><span>Focus</span><strong>Data processing and visualization</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-showcase">
+            <div class="section-shell showcase-frame reveal">
+                <div class="project-visual" aria-label="Stylized vehicle dashboard illustration">
+                    <div class="dashboard">
+                        <div class="gauge gauge-left"><span>FUEL</span><b>72</b></div>
+                        <div class="dashboard-center"><div class="speed">84<small>km/h</small></div><div class="road"></div></div>
+                        <div class="gauge gauge-right"><span>TEMP</span><b>91</b></div>
+                    </div>
+                    <div class="can-pulse"></div>
+                </div>
+            </div>
+        </section>
+        <section class="case-section">
+            <div class="section-shell case-grid">
+                <div class="case-label reveal">01 / THE SYSTEM</div>
+                <div class="case-content reveal">
+                    <h2>One dashboard.<br>Multiple signal sources.</h2>
+                    <p>The system was designed around a distributed automotive communication model. Separate nodes provide fuel and temperature values while the dashboard node listens on the CAN bus, identifies relevant frames, processes incoming payloads, and updates the driver-facing display.</p>
+                    <p>The project brought together communication logic, data interpretation, warning behavior, and visualization in a complete embedded workflow rather than treating CAN as an isolated protocol exercise.</p>
+                    <div class="feature-grid">
+                        <article class="feature-card"><span>01</span><h3>CAN reception</h3><p>Receives live fuel and temperature frames from other nodes on the shared vehicle network.</p></article>
+                        <article class="feature-card"><span>02</span><h3>Message filtering</h3><p>Identifies the required messages and separates useful application data from general bus traffic.</p></article>
+                        <article class="feature-card"><span>03</span><h3>Warning logic</h3><p>Evaluates incoming values and surfaces driver warnings when defined thresholds are reached.</p></article>
+                        <article class="feature-card"><span>04</span><h3>Live display</h3><p>Presents current vehicle information visually using DocLight for fast validation and demonstration.</p></article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="case-section">
+            <div class="section-shell case-grid">
+                <div class="case-label reveal">02 / ARCHITECTURE</div>
+                <div class="case-content reveal">
+                    <h2>Data travels with<br>clear ownership.</h2>
+                    <p>Each node has a focused responsibility. Sensor-side nodes publish their measurements, CAN provides deterministic transport, and the dashboard owns presentation and warning behavior.</p>
+                    <div class="architecture">
+                        <div class="architecture-flow">
+                            <div class="architecture-node">FUEL NODE</div><div class="architecture-arrow">→ CAN →</div>
+                            <div class="architecture-node">DASHBOARD NODE</div><div class="architecture-arrow">→ UI →</div>
+                            <div class="architecture-node">DOCLIGHT DISPLAY</div>
+                        </div>
+                        <p class="architecture-note">Temperature data follows the same bus path and is decoded by the dashboard node alongside fuel information.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-next">
+            <div class="section-shell next-inner">
+                <div><span>Next project / 02</span><h2>Modbus Slave Device</h2></div>
+                <a class="next-link" href="modbus-slave.html">View next case study ↗</a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer section-shell">
+        <div class="footer-brand"><span class="brand-mark">CD</span><p>Embedded software engineer.<br>Building reliability into the system.</p></div>
+        <div class="footer-links"><a href="../index.html">Home</a><a href="mailto:support@chetandeshmukh.in">Email ↗</a></div>
+        <div class="footer-meta"><span>© <span data-year></span> Chetan Deshmukh</span><span>CAN Dashboard System</span></div>
+    </footer>
+</body>
+</html>

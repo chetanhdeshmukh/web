@@ -1,0 +1,212 @@
+# Chetan Deshmukh
+
+## Embedded Software Engineer
+
+Automotive Embedded Software Engineer with experience in AUTOSAR Base Software verification, Functional Safety, software testing, embedded firmware development, and automation.
+
+Currently working with KPIT Technologies on Cummins Base Software projects, focusing on white-box testing, VectorCAST-based verification, ASPICE compliance, and Functional Safety activities.
+
+Beyond verification, I have hands-on experience developing embedded systems using C, implementing communication protocols such as CAN and Modbus, creating device drivers, and building automation tools using Python.
+
+I enjoy solving complex engineering problems, improving development workflows, mentoring engineers, and exploring ways to automate repetitive engineering tasks using AI.
+
+---
+
+# Professional Experience
+
+## Associate Software Engineer
+
+### KPIT Technologies
+
+July 2024 – Present
+
+Working on Cummins Base Software (BSW) projects in the automotive domain.
+
+### Key Contributions
+
+* Performed end-to-end white-box verification and unit testing of 25+ AUTOSAR BSW components.
+* Worked across communication, memory management, I/O, and Complex Device Driver domains.
+* Created and maintained more than 2500 VectorCAST test cases.
+* Achieved 100% statement and branch coverage for ASIL-D verification objectives.
+* Conducted code analysis and requirements analysis for safety-critical software modules.
+* Designed requirement-based and coverage-based test cases.
+* Identified implementation defects, dead code, and requirement gaps.
+* Collaborated with customer stakeholders to understand software behavior and clarify requirements.
+* Managed VectorCAST repositories and reporting repositories using GitLab.
+* Reviewed and approved merge requests.
+* Served as the primary technical point of contact for VectorCAST-related activities across multiple teams.
+* Resolved complex VectorCAST project configuration and environment issues.
+* Delivered VectorCAST training sessions to more than 30 engineers.
+* Mentored engineers on test environment setup, coverage analysis, and advanced test case development.
+* Coordinated with Vector and Cadence support teams for tool-related investigations.
+* Participated in ASPICE and Functional Safety compliance activities related to unit testing.
+* Reported technical status and risks to KPIT and Cummins leadership.
+* Developed a Python-based VectorCAST report generation utility.
+* Proposed an Agentic AI-based automation framework for VectorCAST workflows, currently under evaluation.
+
+### Recognition
+
+Received the High Flyer Krown Award (2025) for resolving critical VectorCAST configuration issues and supporting successful project deliveries.
+
+---
+
+## Embedded Systems Training Program
+
+### Genesis Pro & VidyaLeap
+
+Nov 2023 – Jul 2024
+
+Completed intensive embedded systems training focused on microcontrollers, communication protocols, embedded C programming, and firmware development.
+
+### Key Areas
+
+* Embedded C Programming
+* Bare-Metal Firmware Development
+* Driver Development
+* UART
+* CAN
+* RS485
+* Modbus
+* Microcontroller Programming
+
+### Recognition
+
+Awarded the Award of Excellence as the top performer across the training program.
+
+---
+
+# Technical Skills
+
+## Programming Languages
+
+* C
+* Python
+* Java
+
+## Embedded Systems
+
+* Bare-Metal Programming
+* Device Driver Development
+* Unit Testing
+* White-Box Testing
+* Requirements Analysis
+* Code Analysis
+* Static Analysis
+
+## Automotive Software
+
+* AUTOSAR Architecture
+* Base Software (BSW)
+* Functional Safety (FuSa)
+* ASPICE
+* MISRA C
+* CERT C
+
+## Protocols
+
+* CAN
+* UART
+* RS485
+* Modbus
+
+## Tools
+
+* VectorCAST
+* Polyspace
+* Git
+* GitLab
+* Code Composer Studio
+
+## Microcontrollers
+
+* TI MSPM0G3507
+* STM32
+
+---
+
+# Embedded Projects
+
+## CAN Dashboard System
+
+GitHub:
+github.com/chetanhdeshmukh/dashboard-can-project
+
+Designed and implemented a multi-node CAN communication system using Embedded C.
+
+### Highlights
+
+* Developed the dashboard node.
+* Received fuel and temperature data from other nodes over CAN.
+* Implemented CAN message processing and filtering.
+* Displayed warnings and real-time vehicle information using DocLight.
+* Developed and validated communication logic between nodes.
+
+### Technologies
+
+Embedded C, CAN, Bare-Metal Programming
+
+---
+
+## Modbus Slave Device
+
+GitHub:
+github.com/chetanhdeshmukh/Modbus_Slave_Device
+
+Implemented Modbus protocol from scratch and developed a complete slave device solution.
+
+### Highlights
+
+* Developed UART driver.
+* Developed Modbus driver.
+* Implemented Modbus protocol stack.
+* Supported communication over RS485.
+* Implemented protocol frame handling and command processing.
+* Validated reliable communication across multiple nodes.
+
+### Technologies
+
+Embedded C, Modbus, UART, RS485, Bare-Metal Programming
+
+---
+
+# Areas of Interest
+
+* Automotive Embedded Systems
+* AUTOSAR
+* Functional Safety
+* Embedded Software Architecture
+* Verification & Validation
+* Embedded Tooling and Automation
+* AI for Software Engineering
+* Agentic AI Systems
+* Embedded Linux
+* Backend Development
+* Go Programming
+* Flutter Application Development
+
+---
+
+# Selected Achievements
+
+* High Flyer Krown Award (2025)
+* Award of Excellence (2024)
+* Qualified GATE (CS) 2022
+* KPIT Nova Hiring Hackathon Recognition
+
+---
+
+# Engineering Philosophy
+
+I believe that software quality should be engineered into a product rather than tested into it.
+
+My approach combines deep code understanding, structured verification, automation, and continuous improvement. I enjoy exploring ways to reduce engineering effort through tooling, automation, and AI while maintaining high standards of software quality and reliability.
+
+---
+
+# Future Goals
+
+* Grow into a senior embedded software engineering role.
+* Expand expertise in AUTOSAR and automotive software architecture.
+* Contribute to advanced software automation using AI.
+* Build products and tools that solve real-world engineering problems.
+* Continue learning across embedded systems, backend development, and artificial intelligence.

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modbus Slave Device by Chetan Deshmukh: a protocol stack and device implementation built from scratch with Embedded C, UART, and RS485.">
+    <meta name="theme-color" content="#070b0f">
+    <title>Modbus Slave Device | Chetan Deshmukh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="../assets/project.css">
+    <script src="../assets/script.js" defer></script>
+</head>
+<body class="project-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="site-header" data-header>
+        <a class="brand" href="../index.html" aria-label="Chetan Deshmukh, home"><span class="brand-mark">CD</span><span class="brand-name">Chetan Deshmukh</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+        <nav class="site-nav" id="site-nav" aria-label="Project navigation">
+            <a href="../index.html#projects">All projects</a>
+            <a class="nav-cta" href="https://github.com/chetanhdeshmukh/Modbus_Slave_Device" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="project-hero">
+            <div class="section-shell">
+                <div class="project-breadcrumb reveal"><a href="../index.html">Home</a><span>/</span><a href="../index.html#projects">Projects</a><span>/</span><span>Modbus Slave</span></div>
+                <div class="project-hero-grid">
+                    <div class="reveal">
+                        <div class="project-kicker">02 / PROTOCOL ENGINEERING</div>
+                        <h1>Modbus<br>Slave</h1>
+                        <p class="project-summary">A complete slave device developed from first principles: UART driver, Modbus RTU stack, command processing, frame validation, and reliable communication over RS485.</p>
+                    </div>
+                    <div class="project-actions reveal">
+                        <a class="button button-primary" href="https://github.com/chetanhdeshmukh/Modbus_Slave_Device" target="_blank" rel="noreferrer">Explore source code <span aria-hidden="true">↗</span></a>
+                        <div class="project-facts">
+                            <div><span>Role</span><strong>Protocol and driver development</strong></div>
+                            <div><span>Stack</span><strong>Embedded C / UART / RS485</strong></div>
+                            <div><span>Focus</span><strong>Reliable multi-node communication</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-showcase">
+            <div class="section-shell showcase-frame reveal">
+                <div class="project-visual" aria-label="Stylized Modbus protocol stack illustration">
+                    <div class="protocol-stack">
+                        <div><span>APPLICATION</span><i>COMMAND PROCESSING</i></div>
+                        <div><span>MODBUS RTU</span><i>FRAME + CRC</i></div>
+                        <div><span>UART DRIVER</span><i>SERIAL I/O</i></div>
+                        <div><span>RS485</span><i>PHYSICAL BUS</i></div>
+                    </div>
+                    <div class="binary-stream">0110 1011 0010 1101 0100</div>
+                </div>
+            </div>
+        </section>
+        <section class="case-section">
+            <div class="section-shell case-grid">
+                <div class="case-label reveal">01 / THE BUILD</div>
+                <div class="case-content reveal">
+                    <h2>Protocol behavior,<br>implemented end to end.</h2>
+                    <p>Rather than relying on a prebuilt stack, this project implements the communication path from the UART driver upward. Incoming bytes are assembled into frames, validated, decoded, and routed to the correct command behavior before a compliant response is returned.</p>
+                    <p>Building each layer directly made timing, framing, addressing, and error handling visible, turning the protocol specification into working device behavior.</p>
+                    <div class="feature-grid">
+                        <article class="feature-card"><span>01</span><h3>UART driver</h3><p>Low-level serial communication provides the transport foundation for the protocol implementation.</p></article>
+                        <article class="feature-card"><span>02</span><h3>Frame handling</h3><p>Receives, assembles, validates, and interprets Modbus RTU request frames.</p></article>
+                        <article class="feature-card"><span>03</span><h3>Command processing</h3><p>Maps validated requests to device operations and constructs the correct slave response.</p></article>
+                        <article class="feature-card"><span>04</span><h3>Multi-node validation</h3><p>Tests communication behavior across multiple nodes on the shared RS485 physical layer.</p></article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="case-section">
+            <div class="section-shell case-grid">
+                <div class="case-label reveal">02 / DATA PATH</div>
+                <div class="case-content reveal">
+                    <h2>Every byte has<br>a defined journey.</h2>
+                    <p>The implementation keeps physical transport, serial I/O, protocol rules, and application behavior separated. That layered structure makes the system easier to reason about, validate, and extend.</p>
+                    <div class="architecture">
+                        <div class="architecture-flow">
+                            <div class="architecture-node">RS485 BUS</div><div class="architecture-arrow">→</div>
+                            <div class="architecture-node">UART DRIVER</div><div class="architecture-arrow">→</div>
+                            <div class="architecture-node">MODBUS STACK</div><div class="architecture-arrow">→</div>
+                            <div class="architecture-node">DEVICE LOGIC</div>
+                        </div>
+                        <p class="architecture-note">Responses return through the same layers in reverse after command execution and frame construction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-next">
+            <div class="section-shell next-inner">
+                <div><span>Back to project / 01</span><h2>CAN Dashboard System</h2></div>
+                <a class="next-link" href="can-dashboard.html">View previous case study ↗</a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer section-shell">
+        <div class="footer-brand"><span class="brand-mark">CD</span><p>Embedded software engineer.<br>Building reliability into the system.</p></div>
+        <div class="footer-links"><a href="../index.html">Home</a><a href="mailto:support@chetandeshmukh.in">Email ↗</a></div>
+        <div class="footer-meta"><span>© <span data-year></span> Chetan Deshmukh</span><span>Modbus Slave Device</span></div>
+    </footer>
+</body>
+</html>
